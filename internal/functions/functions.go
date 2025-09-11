@@ -7,6 +7,7 @@ import (
 	"github.com/tmkruger/sl_character_gen/internal/data"
 )
 
+// Core App Functions
 func CustomIntro(c *data.Character, mainMenu *bool) {
 	//Remove Main Menu and Flavor Text for Introduction :)
 	RmLineAbove(7)
@@ -78,7 +79,7 @@ func AncestryPicker(c *data.Character) {
 	}
 }
 
-func GetNationality(c *data.Character) {
+func GetHumanNationality(c *data.Character) {
 	fmt.Println("\n“Ah, a child of humankind. But even you lot squabble over borders and banners.\nWere you raised beneath Alethkar’s war drums, the scholarly domes of Jah Keved, the stone valleys of Shinovar, or perhaps Thaylenah’s bustling markets?\nTell me, from which patch of soil did your story sprout?“\n")
 	println("Which kingdom did you grow up in? (Character Nationality)\n")
 	fmt.Println("1.Alethi	5.Reshi		9.Thaylen\n2.Azish 	6.Shin		10.Unkalaki\n3.Herdazian	7.Iriali	11.Veden\n4.Natan		8.Kharbranthian")
@@ -138,6 +139,95 @@ func GetNationality(c *data.Character) {
 	}
 }
 
+func GetSingerNationality(c *data.Character) {
+	println("“And where, pray tell, do you skulk these days? Perhaps hiding beneath Alethkar’s banners, sweeping floors in a Thaylen market, or serving wine to some pompous lighteyes in Jah Keved?\nTell me which kingdom’s cobblestones you’re haunting, it helps me place you in the right chapter of this little drama.“ (Cultural Expertise)\n")
+	println("1.Alethi	5.Reshi		9.Thaylen\n2.Azish 	6.Shin		10.Unkalaki\n3.Herdazian	7.Iriali	11.Veden\n4.Natan		8.Kharbranthian")
+	var answer string
+	for {
+		answer = GetUserInput("Enter your choice: ")
+		switch answer {
+		case "1", "alethi":
+			c.Expertises = append(c.Expertises, "Alethi")
+			return
+		case "2", "azish":
+			c.Expertises = append(c.Expertises, "Azish")
+			return
+		case "3", "herdazian":
+			c.Expertises = append(c.Expertises, "Herdazian")
+			return
+		case "4", "natan":
+			c.Expertises = append(c.Expertises, "Natan")
+			return
+		case "5", "reshi":
+			c.Expertises = append(c.Expertises, "Reshi")
+			return
+		case "6", "shin":
+			c.Expertises = append(c.Expertises, "Shin")
+			return
+		case "7", "iriali":
+			c.Expertises = append(c.Expertises, "Iriali")
+			return
+		case "8", "kharbranthian":
+			c.Expertises = append(c.Expertises, "Kharbranthian")
+			return
+		case "9", "thaylen":
+			c.Expertises = append(c.Expertises, "Thaylen")
+			return
+		case "10", "unkalaki":
+			c.Expertises = append(c.Expertises, "Unkalaki")
+			return
+		case "11", "veden":
+			c.Expertises = append(c.Expertises, "Veden")
+			return
+		default:
+			fmt.Println("I don't understand, Can you repeat yourself? (Items from the list only please)")
+		}
+	}
+}
+
+func GetForms(c *data.Character) {
+	println("“Ah, a Singer! How delightful, you folk have a knack for turning a melody into muscle and sinew.\nTell me, which forms have you learned to dance with? Warform for strength? Workform for clever hands? Perhaps even something… more secret? Don’t be shy;\nI’m a collector of stories, not a tattler… usually.“ (Singer Forms)\n")
+	println("1.Finesse (Art Form | Nimble Form)\n2.Wisdom (Mediation Form | Scholar Form)\n3.Resolve (War Form | Work Form)\n")
+	var answer string
+	for {
+		answer = GetUserInput("Enter your choice: ")
+		switch answer {
+		case "1", "finesse":
+			c.Talents = append(c.Talents, "Finesse")
+			return
+		case "2", "wisdom":
+			c.Talents = append(c.Talents, "Wisdom")
+			return
+		case "3", "resolve":
+			c.Talents = append(c.Talents, "Resolve")
+			return
+		default:
+			fmt.Println("I don't understand, Can you repeat yourself? (Items from the list only please)")
+		}
+	}
+}
+
+func GetSingerStatus(c *data.Character) {
+	RmLineAbove(4)
+	println("“Mmm, one more thing, friend of rhythms. Are you quietly watching for the Listeners, gathering secrets behind an innocent smile?\nOr have you worn the slave’s brands, bending knee while plotting freedom—or perhaps just survival?\nDon’t worry, your answer will stay between us… probably.“ (Status)\n")
+	println("1.Spy\n2.Slave\n")
+	var answer string
+	for {
+		answer = GetUserInput("Enter your choice: ")
+		switch answer {
+		case "1", "spy":
+			c.Status = "Spy"
+			c.Expertises = append(c.Expertises, "Listener")
+			return
+		case "2", "slave":
+			c.Status = "Slave"
+			return
+		default:
+			fmt.Println("I don't understand, Can you repeat yourself? (Items from the list only please)")
+		}
+	}
+}
+
 func GetLevel(c *data.Character) {
 	println("\n“Let’s speak of experience. Are you but a wide-eyed squire fumbling with a wooden blade,\nor a seasoned veteran whose scars could each tell a book’s worth of stories?\nIn other words, what level of legend do you claim?“ (Character Level 1-3)\n")
 	for {
@@ -181,6 +271,7 @@ func GetBackstory(c *data.Character) {
 	println("“At last, we come to the marrow of the matter: your past. Every soul drags behind them a cart of stories, some glorious, some… less so. What tales haunt you, drive you, or whisper in your ear as you walk into tomorrow?“")
 }
 
+// Helper Functions
 func RmLineAbove(num int) {
 	for i := 0; i < num; i++ {
 		fmt.Printf("\033[1A\033[2K")
@@ -195,6 +286,3 @@ func GetUserInput(prompt string) string {
 	RmLineAbove(1)
 	return input
 }
-
-//println("What forms do you know?")
-//println("1.Finesse (Art Form | Nimble Form)\n2.Wisdom (Mediation Form | Scholar Form)\n3.Resolve (War Form | Work Form)")

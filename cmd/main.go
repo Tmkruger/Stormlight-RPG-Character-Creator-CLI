@@ -45,13 +45,20 @@ func main() {
 	}
 	functions.AncestryPicker(&c)
 	if c.Ancestry == "Human" {
-		functions.GetNationality(&c)
+		functions.GetHumanNationality(&c)
+	} else {
+		functions.GetForms(&c)
+		functions.GetSingerStatus(&c)
+		functions.GetSingerNationality(&c)
 	}
 	functions.GetLevel(&c)
 
 	println(c.Name)
 	println(c.Ancestry)
-	println(c.Expertises[0])
+	if c.Ancestry == "Singer" {
+		println(c.Status)
+	}
+	fmt.Printf("%v\n", c.Expertises)
 	println(c.Level)
 	//Start finding out what class and stats and such
 	//Choose what level to create to. (max 3 for our sake)
