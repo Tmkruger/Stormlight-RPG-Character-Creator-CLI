@@ -43,9 +43,6 @@ func main() {
 	for mainMenu == true {
 		intro(&c, &mainMenu)
 	}
-
-	fmt.Print("\033[1A\033[2K")
-	fmt.Printf("\nHello, %v\n", c.Name)
 	functions.AncestryPicker(&c)
 	functions.GetLevel(&c)
 

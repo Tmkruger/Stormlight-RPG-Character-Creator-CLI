@@ -8,43 +8,47 @@ import (
 )
 
 func CustomIntro(c *data.Character, mainMenu *bool) {
-	// Flavor Text for Introduction :)
+	//Remove Main Menu and Flavor Text for Introduction :)
+	RmLineAbove(7)
 	fmt.Println("”Life before death, Strength before weakness, Journey before destination”\n	- Oath of the Knights Radiant\n")
-	fmt.Println("Odium's forces are growing stronger, we need all the help we can get")
-	fmt.Println("Are you willing to fight with us? (Would you like to make a new character? (y/n))")
+	fmt.Println("”Ah, there you are. You look like someone standing on the edge of a story.\nTell me...do you intend to leap in, blades flashing and heart pounding?\nOr will you sit back and watch others risk their lives while you sip wine and critique the prose?\nYes or no, friend: are you joining this tale?\n")
+	fmt.Println("Would you like to make a new character? (y/n)\n")
 	var answer string
 	for {
 		fmt.Print("Enter your choice: ")
 		fmt.Scan(&answer)
+		answer = strings.ToLower(answer)
 		//Determine if we want to make a character
 		switch answer {
-		case "n":
-			fmt.Print("\033[1A\033[2K")
-			fmt.Println("We understand, hopefully we will be enough...\n")
+		case "n", "no":
+			RmLineAbove(2)
+			fmt.Println("In another tale than...\n")
 			return
-		case "y":
+		case "y", "yes":
 			//Wants to make character so get name
 			*mainMenu = false
+			RmLineAbove(3)
+			fmt.Println("”Every good story needs a name for its hero. Or villain. Or tragic fool, depending on how things go.\nWhat shall I call you when I whisper your deeds to the winds?” (Character Name)\n")
 			for {
-				fmt.Print("\033[1A\033[2K")
-				fmt.Println("What can we call you? (Character Name)")
 				fmt.Print("Enter your character name: ")
 				fmt.Scan(&answer)
 				name := answer
-				fmt.Print("\033[1A\033[2K")
+				RmLineAbove(1)
 				fmt.Printf("Are you certain %v is your name? (y/n)\n", name)
 				for {
 					fmt.Print("Enter your choice: ")
 					fmt.Scan(&answer)
-					fmt.Print("\033[1A\033[2K")
+					RmLineAbove(1)
 					switch answer {
-					case "y":
-						c.Name = name
-						return
+						case "y":
+							RmLineAbove(1)
+							c.Name = name
+							return
 					case "n":
+						RmLineAbove(1)
 						break
 					default:
-						fmt.Print("\033[1A\033[2K")
+						RmLineAbove(1)
 						fmt.Println("I don't understand, Can you repeat yourself? (y/n only please)")
 						continue
 					}
@@ -52,14 +56,14 @@ func CustomIntro(c *data.Character, mainMenu *bool) {
 				}
 			}
 		default:
-			fmt.Print("\033[1A\033[2K")
+			RmLineAbove(1)
 			fmt.Println("I don't understand, Can you repeat yourself? (y/n only please)")
 		}
 	}
 }
 
 func AncestryPicker(c *data.Character) {
-	println("“Before we continue, I must know... \nDo you walk the path of humankind, or do you sing with the rhythms of Roshar’s singers?” (Character Ancestry)")
+	fmt.Printf("“Ah, well than %v. About your lineage, the tapestry from which you were cut.\nWere your ancestors proud Alethi, diligent Shin, wandering Horneaters, or something stranger still?\nDon’t be shy, I’ve heard worse answers than 'illegitimate goat spawn,' and that turned out quite the tale.“ (Character Ancestry)\n", c.Name)
 	println("1.Human\n2.Singer")
 	var answer string
 	for {
@@ -67,7 +71,7 @@ func AncestryPicker(c *data.Character) {
 		fmt.Scan(&answer)
 		answer = strings.ToLower(answer)
 		//Gets rid of what user typed as to not break immersion
-		fmt.Print("\033[1A\033[2K")
+		RmLineAbove(3)
 		switch answer {
 		case "human", "1":
 			c.Ancestry = "Human"
@@ -83,21 +87,25 @@ func AncestryPicker(c *data.Character) {
 	}
 }
 
+func GetNationality(c *data.Character) {
+	println("“Ah, a child of humankind. But even you lot squabble over borders and banners. Were you raised beneath Alethkar’s war drums, the scholarly domes of Jah Keved, the stone valleys of Shinovar, or perhaps Thaylenah’s bustling markets? Tell me, from which patch of soil did your story sprout?“")
+}
+
 func GetLevel(c *data.Character) {
-	println("How experienced are you? (Starting Level 1-3)")
+	println("\n“Let’s speak of experience. Are you but a wide-eyed squire fumbling with a wooden blade,\nor a seasoned veteran whose scars could each tell a book’s worth of stories?\nIn other words, what level of legend do you claim?“ (Character Level)\n")
 	for {
 		fmt.Print("Enter your choice: ")
-		var choice int
+		var choice string
 		fmt.Scanln(&choice)
-		fmt.Print("\033[1A\033[2K")
+		RmLineAbove(1)
 		switch choice {
-		case 1:
+		case "1":
 			c.Level = 1
 			return
-		case 2:
+		case "2":
 			c.Level = 2
 			return
-		case 3:
+		case "3":
 			c.Level = 3
 			return
 		default:
@@ -107,7 +115,29 @@ func GetLevel(c *data.Character) {
 }
 
 func GetPaths(c *data.Character) {
-	//Choose paths depending on level
+	println("“The world offers many roads, and few of them are straight. Do you follow the ideals of Radiance? Tread the blood-soaked road of Odium’s servants? Or perhaps you wander, untethered, carving your own crooked trail. Which path will you stumble down, oh eager traveler?“ (Character Paths)")
+}
+
+func GetAttributes (c *data.Character) {
+	println("“Ah, the bones of your tale—strength, wit, charm, and all the little numbers that will later decide whether you climb triumphantly or plummet hilariously. Tell me, in what qualities do you shine, and in which do you stumble like a drunk chull?“")
+}
+
+func GetTalents(c *data.Character) {
+	println("“Every protagonist needs a trick. Shall we say you’re handy with a blade? Or perhaps your tongue spins lies smoother than satin? Maybe you juggle knives while reciting dirty limericks—that would be memorable. What talents do you bring to the tale?“")
+}
+
+func GetEquipment(c *data.Character) {
+	println("“Heroes and fools alike are only as good as the tools they carry. Sword, spear, boots without holes, or a lucky rock named Kevin—what shall I place in your hands as you stride into destiny?“")
+}
+
+func GetBackstory(c *data.Character) {
+	println("“At last, we come to the marrow of the matter: your past. Every soul drags behind them a cart of stories, some glorious, some… less so. What tales haunt you, drive you, or whisper in your ear as you walk into tomorrow?“")
+}
+
+func RmLineAbove(num int) {
+	for i:= 0; i < num; i++ {
+		fmt.Printf("\033[1A\033[2K")
+	}
 }
 
 //println("Which kingdom did you grow up in? (Nationality)")
