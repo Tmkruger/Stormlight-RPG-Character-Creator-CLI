@@ -88,7 +88,7 @@ func AncestryPicker(c *data.Character) {
 }
 
 func GetNationality(c *data.Character) {
-	println("“Ah, a child of humankind. But even you lot squabble over borders and banners. Were you raised beneath Alethkar’s war drums, the scholarly domes of Jah Keved, the stone valleys of Shinovar, or perhaps Thaylenah’s bustling markets? Tell me, from which patch of soil did your story sprout?“")
+	fmt.Println("\n“Ah, a child of humankind. But even you lot squabble over borders and banners.\nWere you raised beneath Alethkar’s war drums, the scholarly domes of Jah Keved, the stone valleys of Shinovar, or perhaps Thaylenah’s bustling markets?\nTell me, from which patch of soil did your story sprout?“ (Character Nationality)")
 }
 
 func GetLevel(c *data.Character) {

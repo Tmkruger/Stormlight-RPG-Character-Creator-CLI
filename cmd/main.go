@@ -44,6 +44,9 @@ func main() {
 		intro(&c, &mainMenu)
 	}
 	functions.AncestryPicker(&c)
+	if c.Ancestry == "Human" {
+		functions.GetNationality(&c)
+	}
 	functions.GetLevel(&c)
 
 	println(c.Name)
