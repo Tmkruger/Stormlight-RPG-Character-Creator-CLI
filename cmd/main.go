@@ -52,7 +52,9 @@ func main() {
 		functions.GetSingerNationality(&c)
 	}
 	functions.GetLevel(&c)
+	functions.GetPaths(&c)
 
+	//Print Char Details
 	println(c.Name)
 	println(c.Ancestry)
 	if c.Ancestry == "Singer" {

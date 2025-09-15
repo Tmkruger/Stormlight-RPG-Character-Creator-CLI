@@ -10,3 +10,29 @@ type Character struct {
 	Expertises []string
 	Talents    []string
 }
+
+type Specialties struct {
+	Name    string
+	Talents []string
+}
+type Talent struct {
+	Name        string
+	Req         Prereq
+	Description string
+}
+type Prereq struct {
+	Skill      string
+	SkillLevel int
+}
+
+type Path struct {
+	Name          string
+	Type          string
+	Description   string
+	KeyTalent     string
+	StartingSkill string
+	Specialties   Specialties
+	Attributes    []string
+	Skills        []string
+	MultiPaths    []string
+}

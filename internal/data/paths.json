@@ -1,0 +1,112 @@
+{
+  "heroicPaths": [
+    {
+      "id": "agent",
+      "name": "Agent",
+      "description": "Artists of duplicity and sabotage, Agents grasp the\nthreads of fate in the palms of their hands, waiting for\nthe perfect moment to pull and unravel the carefully\nlaid plans of others. Agents can fool even the most\nprudent with their clever ruses, swift movements,and calculated strikes.\nFormal education matters little to Agents. Most are\nfiercely observant and either self-taught or trained in\naction by their crew. Rules and regulations from outside\nentities are but playthings to work around or disregard\naltogether, and Agents answer only to their own code.\nThey meet impossible tasks with a sly smile and razor-\n sharp wit, living for the thrill of cheating death yet again",
+      "keyTalent": {
+        "id": "opportunist",
+        "name": "Opportunist",
+        "prerequisite": null,
+        "description": "Once per round, when you roll a plot die, you can reroll that result. The original roll has no effect and you must use the new result.",
+        "summary": "Once per round, you can reroll your plot die."
+      },
+      "startingSkill": "Insight",
+      "specialties": [
+        {
+          "id": "investigator",
+          "name": "Investigator",
+          "description": "Hunches tend to be unreliable—but Investigators cultivate trustworthy instincts, learning to listen, collaborate, and pursue answers to questions others don’t think to ask.",
+          "talents": [
+            {
+              "id": "watchful_eye",
+              "name": "Watchful Eye",
+              "prerequisite": { "deduction": 1 },
+              "description": "When a willing ally you can influence within 20 feet of you rolls a plot die, you can use this reaction to use Opportunist on that plot die as if it were your own.",
+              "summary": "Use Opportunist on the plot die of a willing ally within 20 feet."
+            },
+            {
+              "id": "quick_analysis",
+              "name": "Quick Analysis",
+              "prerequisite": "watchful_eye",
+              "description": "Spend 2 focus to gain two action points, which you can only use to make cognitive skill tests via the following actions: Use a Skill, Gain Advantage, or an action from any Agent talent.\nDuring a conversation or endeavor, at the GM’s discretion, you can instead use both action points to make an additional contribution for the round.",
+              "summary": "Spend 2 focus to gain two action points for cognitive tests with Use a Skill, Gain Advantage, or an Agent talent."
+            },
+            {
+              "id": "gather_evidence",
+              "name": "Gather Evidence",
+              "prerequisite": { "insight": 2 },
+              "description": "After you succeed on a cognitive test against another character, you become Focused until the end of your next turn. Additionally, when you acquire this talent, gain a utility expertise in Legal Codes.",
+              "summary": "Gain Legal Codes expertise. When you succeed on a cognitive test against a target, you become Focused."
+            },
+            {
+              "id": "get_em_talking",
+              "name": "Get 'Em Talking",
+              "prerequisite": { "insight": 2 },
+              "description": "Spend 1 focus to make a Deduction test against the Spiritual defense of a character you can influence. On a success, you learn the target’s motivation for being in the scene. Until the end of the scene, when you make a test to leverage this motivation against the target, you can raise the stakes.",
+              "summary": "Spend 1 focus to test Deduction vs. Spiritual to learn the target’s motivation. During this scene, you can raise the stakes on tests to leverage this motivation."
+            },
+            {
+              "id": "baleful",
+              "name": "Baleful",
+              "prerequisite": "get_em_talking",
+              "description": "To resist your influence, a character must spend additional focus equal to your tier",
+              "summary": "To resist your influence, a character must spend additional focus equal to your tier."
+            },
+            {
+              "id": "hardy",
+              "name": "Hardy",
+              "prerequisite": "baleful",
+              "description": "When you acquire this talent, your maximum and current health increase by 1 per level. This applies to all previous and future levels; for example, if you choose this talent at level 6, retroactively increase your health by 6.",
+              "summary": "Gain +1 max health per level (including previous levels)."
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "lorem impsum",
+          "talents": []
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "lorem impsum",
+          "talents": []
+        }
+      ],
+      "attributes": [],
+      "skills": [],
+      "multipaths": []
+    }
+  ],
+
+  "radiantPaths": [
+    {
+      "id": "",
+      "description": "",
+      "keyTalent": "",
+      "startingSkill": "",
+      "specialties": [
+        {
+          "id": "",
+          "description": "",
+          "talents": []
+        },
+        {
+          "id": "",
+          "description": "",
+          "talents": []
+        },
+        {
+          "id": "",
+          "description": "",
+          "talents": []
+        }
+      ],
+      "attributes": [],
+      "skills": [],
+      "multipaths": []
+    }
+  ]
+}
