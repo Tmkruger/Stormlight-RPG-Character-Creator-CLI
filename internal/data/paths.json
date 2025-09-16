@@ -63,15 +63,58 @@
           ]
         },
         {
-          "id": "",
-          "name": "",
-          "description": "lorem impsum",
-          "talents": []
+          "id": "spy",
+          "name": "Spy",
+          "description": "To get what they need, Spies plant themselves in sticky situations, ready to deflect or ease suspicion when it inevitably sweeps their way.",
+          "talents": [
+            {
+              "id": "sure_outcome",
+              "name": "Sure Outcome",
+              "prerequisite": {"insight" : 2},
+              "description": "When you use Opportunist, spend 2 focus to change an Opportunity to a Complication +4, or change any Complication to an Opportunity.",
+              "summary": "When you use your Opportunist talent, instead of rerolling the plot die, you can spend 2 focus to flip it to a specific result. If the die was showing an Opportunity, flip it to a Complication +4. If it was showing any Complication, flip it to an Opportunity."
+            },
+            {
+              "id": "collected",
+              "name": "Collected",
+              "prerequisite": "sure_outcome",
+              "description": "Increase your Cognitive and Spiritual defenses by 2.",
+              "summary": "When you acquire this talent, increase your Cognitive and Spiritual defenses by 2."
+            },
+            {
+              "id": "subtle_takedown",
+              "name": "Subtle Takedown",
+              "prerequisite": ["cover_story", {"insight": 3}],
+              "description": "Make an unarmed attack with Insight vs. an unsuspecting target’s Cognitive, raising the stakes. On a hit, they can’t communicate.",
+              "summary": "Make an unarmed attack using Insight against the Cognitive defense of a character who is Surprised, doesn’t sense you, or doesn’t view you as a threat (such as if you’re disguised). The target must be your size or smaller. Raise the stakes on this attack test. On a hit, the target also can’t communicate until the end of their next turn. Also on a hit, you can spend an Opportunity to Grapple them as a free action, automatically succeeding on your test; while Restrained by this grapple, they are also Prone."
+            },
+            {
+              "id": "plausible_excuse",
+              "name": "Plausible Excuse",
+              "prerequisite": {"deception": 1},
+              "description": "Gain Sleight of Hand expertise. When discovered skulking, spend 2 focus to feign innocence.",
+              "summary": "After you are discovered while hiding or otherwise skulking about, you can use this reaction and spend 2 focus to pass yourself off as doing something innocent. You influence each character who can sense you to believe your excuse. A character can resist this influence, but after they do, they lose additional focus equal to your ranks in Deception. Additionally, when you acquire this talent, gain a utility expertise in Sleight of Hand."
+            },
+            {
+              "id": "cover_story",
+              "name": "Cover Story",
+              "prerequisite": "plausible_excuse",
+              "description": "Gain a false identity and a relevant cultural expertise.",
+              "summary": "When you acquire this talent, you put the finishing touches on a false identity for yourself. Discuss the details of this identity with your GM, including which communities you use this identity to move through and what its reputation is within those communities. Additionally, when you acquire this talent, gain a cultural expertise relevant to your false identity’s culture."
+            },
+            {
+              "id": "mighty",
+              "name": "Mighty",
+              "prerequisite": "cover_story",
+              "description": "When you hit with a weapon or unarmed attack, for each action point spent, deal extra damage equal to 1 + your tier.",
+              "summary": "When you hit with a weapon or unarmed attack, for each action point you used on that attack’s action, increase the damage you deal by 1 + your tier. For example, if you’re level 6 and you make an attack that costs 2 action points, each action point deals an extra 1 + 2 damage, for a total of 6 damage"
+            }
+          ]
         },
         {
-          "id": "",
-          "name": "",
-          "description": "lorem impsum",
+          "id": "thief",
+          "name": "Thief",
+          "description": "Although a quick mind is an invaluable asset, Thieves train their bodies to keep pace. Whether out of necessity or ambition, they risk it all to swindle the insurmountable odds standing between them and their prize.",
           "talents": []
         }
       ],
