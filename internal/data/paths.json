@@ -209,7 +209,7 @@
         {
           "id": "diplomat",
           "name": "Diplomat",
-          "description": "",
+          "description": "Stationed abroad, Diplomats are adept at navigating court politics. They use what they learn about their host countries to seek more favorable treatment for their own.",
           "talents": [
             {
               "id": "",
@@ -224,7 +224,7 @@
         {
           "id": "faithful",
           "name": "Faithful",
-          "description": "",
+          "description": "For Faithful, worship of the divine permeates their entire lives. They devote themselves to the traditions of their faith, demonstrating their convictions to others through word or deed.",
           "talents": [
             {
               "id": "",
@@ -239,7 +239,7 @@
         {
           "id": "mentor",
           "name": "Mentor",
-          "description": "",
+          "description": "More interested in the individual than the whole, Mentors devote themselves to their wards. They patiently nurture others toward greatness, seeing beyond doubts and deficits to stoke each person’s potential.",
           "talents": [
             {
               "id": "",
@@ -256,13 +256,10 @@
       "skills": ["Discipline", "Deception", "Leadership", "Lore", "Persuasion"],
       "multipaths": ["Leader", "Scholar"],
       "rewards": ["Patron"]
-    }
-  ],
-
-  "radiantPaths": [
+    },
     {
-      "id": "",
-      "name": "",
+      "id": "hunter",
+      "name": "Hunter",
       "description": "",
       "keyTalent": {
         "id": "",
@@ -320,10 +317,294 @@
           ]
         }
       ],
-      "attributes": [],
-      "skills": [],
-      "multipaths": [],
-      "rewards": []
+      "attributes": ["Awareness", "Strength", "Speed"],
+      "skills": [
+        "Agility",
+        "Perception",
+        "Stealth",
+        "Survival",
+        "Light Weaponry",
+        "Heavy Weaponry"
+      ],
+      "multipaths": ["Warrior", "Agent"],
+      "rewards": ["Animal Companion", "Grand Bow", "Shardblade"]
+    },
+    {
+      "id": "leader",
+      "name": "Leader",
+      "description": "",
+      "keyTalent": {
+        "id": "",
+        "name": "",
+        "prerequisite": null,
+        "activation": "",
+        "description": "",
+        "summary": ""
+      },
+      "startingSkill": "",
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "attributes": ["Presence", "Strength", "Willpower"],
+      "skills": [
+        "Athletics",
+        "Deception",
+        "Heavy Weaponry",
+        "Intimidation",
+        "Leadership",
+        "Persuasion"
+      ],
+      "multipaths": ["Warrior", "Envoy"],
+      "rewards": ["Mount Companion", "Military Title", "Shardplate"]
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "description": "",
+      "keyTalent": {
+        "id": "",
+        "name": "",
+        "prerequisite": null,
+        "activation": "",
+        "description": "",
+        "summary": ""
+      },
+      "startingSkill": "",
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "attributes": ["Intellect", "Presence", "Speed", "Strength"],
+      "skills": ["Crafting", "Deduction", "Lore", "Medocine"],
+      "multipaths": ["Agent", "Envoy"],
+      "rewards": ["Fabrials", "Student Companion", "Soul Caster"]
+    },
+    {
+      "id": "warrior",
+      "name": "Warrior",
+      "description": "",
+      "keyTalent": {
+        "id": "",
+        "name": "",
+        "prerequisite": null,
+        "activation": "",
+        "description": "",
+        "summary": ""
+      },
+      "startingSkill": "",
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "prerequisite": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "attributes": ["Speed", "Strength", "Awareness", "Willpower"],
+      "skills": [
+        "Athletics",
+        "Light Weaponry",
+        "Heavy Weaponry",
+        "Intimidation",
+        "Leadership",
+        "Persuasion"
+      ],
+      "multipaths": ["Leader", "Hunter"],
+      "rewards": ["Shardblade", "Shardplate", "Military Title"]
+    }
+  ],
+
+  "radiantPaths": [
+    {
+      "id": "dustbringer",
+      "name": "Dustbringer",
+      "description": "Dustbringers enjoy engineering and taking things apart to learn how they work. The surges of Division and Abrasion make them incredibly hard to pin down, giving them a great advantage as mobile artillery and sappers on the battlefield. Division allows them to selectively decay and destroy, whether by disabling war machines, rending the air into flame, or destroying weapons, armor, and structures. With Abrasion, they can make any part of themselves frictionless, enabling them to slip, slide, and dodge at incredible speeds.",
+      "philosophy": "Great power requires strong discipline.",
+      "spren": "Ashspren",
+      "surges": ["Division", "Abrasion"],
+      "keyTalent": {
+        "id": "dustbringer_key",
+        "name": "First Ideal",
+        "prerequisite": { "level": 2 },
+        "activation": "Special Activation",
+        "description": "Gain Investiture score, Breathe Stormlight, Enhance, and Regenerate. When you complete the goal “Speak the First Ideal,” gain Abrasion and Division skills.",
+        "summary": "When you acquire this talent, you gain access to Investiture, beginning with a maximum Investiture of 2 + your Awareness or Presence (whichever is higher). You can now use the Breathe Stormlight, Enhance, and Regenerate actions. Additionally, you gain the goal “Speak the First Ideal.” After you complete this goal, you gain the following reward: ◆ You become Empowered until the end of that scene. ◆ You gain the Abrasion and Division surges. ◆ You gain an additional skill on your character sheet for the above surges, starting with 1 rank in each."
+      },
+      "specialties": [
+        {
+          "id": "ashspren_bond",
+          "name": "Ashspren Bond",
+          "talents": [
+            {
+              "id": "searing_dust_storm",
+              "name": "Searing Dust Storm",
+              "prerequisite": "First Ideal",
+              "activation": "Special Activation",
+              "description": "Spend Investiture to kick up an obscuring cloud of dust as you Move. Enemies in this cloud take extra damage equal to your ranks in Discipline.",
+              "summary": "When you use the Move action to move along a solid\nsurface, you can spend 1 Investiture or more to kick up\nan obscuring cloud of dust in spaces of your choice that\nyou enter or leave during that movement. This cloud\nremains for a number of rounds equal to the Investiture\nspent, or until a reasonably strong wind disperses it.\nWhen each enemy within this cloud takes damage\nfor the first time during a round, that damage increases\nby your ranks in Discipline."
+            }
+          ]
+        },
+        {
+          "id": "abrasion",
+          "name": "Abrasion",
+          "talents": [
+            {
+              "id": "frictionless_motion",
+              "name": "Frictionless Motion",
+              "prerequisite": "First Ideal",
+              "activation": "Always Active",
+              "description": "While infused with Abrasion,\nincrease your movement by\n10 and ignore Slowed.",
+              "summary": "While infused with Abrasion, your movement rate\nincreases by 10 feet, and you ignore the Slowed\ncondition when imposed by difficult terrain, climbing,\ncrawling, and swimming."
+            }
+          ]
+        },
+        {
+          "id": "division",
+          "name": "Division",
+          "talents": [
+            {
+              "id": "eroding_escape",
+              "name": "Eroding Escape",
+              "prerequisite": "First Ideal",
+              "activation": "1 Action Point",
+              "description": "Spend 1 or more Investiture\nto end that many effects\ninflicting the Restrained or\nImmobilzed condition.",
+              "summary": "Spend 1 Investiture or more to end that many effects on\nyourself or an ally within your reach. The chosen effects\nmust either be applying the Immobilized or Restrained\ncondition, or be adding a disadvantage to one or more\nphysical tests.\nDepending on the effect’s source, this talent might\nnot fully destroy the source at the GM’s discretion,\nbut it creates space or opportunity for your target to\nmove around it or free themselves from its constraint.\nIf the effect’s source remains at the end of the target’s\nnext turn (such as when swimming or when wearing\narmor with the Cumbersome trait), the effect then\nreasserts itself."
+            }
+          ]
+        }
+      ],
+      "multipaths": [
+        { "Agent": "Investigator or Theif" },
+        { "Hunter": "Archer, Assassin, or Tracker" },
+        { "Scholar": "Artifabrian or Strategist" }
+      ]
     }
   ]
 }
