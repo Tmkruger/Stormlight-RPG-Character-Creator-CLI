@@ -251,8 +251,9 @@ func GetLevel(c *data.Character) {
 	}
 }
 
-func GetPaths(c *data.Character) {
+func GetPaths(c *data.Character, paths data.Paths) {
 	println("“The world offers many roads, and few of them are straight. Which path started your tale?\nDo you follow the ideals of Radiance? Tread the blood soaked road of Odium’s servants?\nOr perhaps you wander, untethered, carving your own crooked trail.\nWhich path will you stumble down, oh eager traveler?“ (Starting Path)")
+	println(len(paths.Heroic))
 }
 
 func GetAttributes(c *data.Character) {

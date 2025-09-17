@@ -51,8 +51,9 @@ func main() {
 		functions.GetSingerStatus(&c)
 		functions.GetSingerNationality(&c)
 	}
-	functions.GetLevel(&c)
-	functions.GetPaths(&c)
+	paths, _ := data.ReadPaths()
+
+	functions.GetPaths(&c, paths)
 
 	//Print Char Details
 	println(c.Name)
