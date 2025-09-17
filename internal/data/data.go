@@ -12,6 +12,7 @@ type Character struct {
 }
 
 type Specialties struct {
+	id      string
 	Name    string
 	Talents []string
 }
@@ -26,6 +27,7 @@ type Prereq struct {
 }
 
 type Path struct {
+	id            string
 	Name          string
 	Type          string
 	Description   string
