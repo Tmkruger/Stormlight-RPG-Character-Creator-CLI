@@ -730,6 +730,590 @@
         }
       ],
       "multipaths": ["Agent", "Investigator or Theif", "Hunter", "Archer, Assassin, or Tracker", "Scholar", "Artifabrian or Strategist"]
+    },
+    {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
+    },
+        {
+      "id": "",
+      "name": "",
+      "description": "",
+      "philosophy": "",
+      "spren": "",
+      "surges": ["", ""],
+      "keyTalent": {
+        "id": "",
+        "name": "First Ideal",
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
+        "prereq_skill": "spren",
+        "activation": "Special Activation",
+        "description": "",
+        "summary": ""
+      },
+      "specialties": [
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "",
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        }
+      ],
+      "multipaths": [""]
     }
   ]
 }

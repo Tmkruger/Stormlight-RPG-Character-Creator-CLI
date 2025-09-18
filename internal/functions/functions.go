@@ -259,7 +259,7 @@ func GetPaths(c *data.Character, paths data.Paths) {
 		fmt.Println("No Heroic Paths Loaded")
 		return
 	}
-	fmt.Printf("First path: %s\n", paths.Heroic[0].Name)
+	fmt.Printf("1. %s\n", paths.Heroic[0].Name)
 }
 
 
