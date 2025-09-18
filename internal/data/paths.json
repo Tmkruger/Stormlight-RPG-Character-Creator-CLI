@@ -27,7 +27,7 @@
               "name": "Watchful Eye",
               "path": "agent",
               "specialty": "investigator",
-              "prereq_stat": {"deduction": 1},
+              "prereq_stat": { "deduction": 1 },
               "prereq_skill": null,
               "activation": "Reaction",
               "description": "When a willing ally you can influence within 20 feet of you rolls a plot die, you can use this reaction to use Opportunist on that plot die as if it were your own.",
@@ -49,7 +49,7 @@
               "name": "Gather Evidence",
               "path": "agent",
               "specialty": "investigator",
-              "prereq_stat": {"insight": 2},
+              "prereq_stat": { "insight": 2 },
               "prereq_skill": "quick_analysis",
               "activation": "Always Active",
               "description": "After you succeed on a cognitive test against another character, you become Focused until the end of your next turn. Additionally, when you acquire this talent, gain a utility expertise in Legal Codes.",
@@ -60,7 +60,7 @@
               "name": "Get 'Em Talking",
               "path": "agent",
               "specialty": "investigator",
-              "prereq_stat": {"insight": 2},
+              "prereq_stat": { "insight": 2 },
               "prereq_skill": null,
               "activation": "2 Action Points",
               "description": "Spend 1 focus to make a Deduction test against the Spiritual defense of a character you can influence. On a success, you learn the target’s motivation for being in the scene. Until the end of the scene, when you make a test to leverage this motivation against the target, you can raise the stakes.",
@@ -87,6 +87,28 @@
               "activation": "Always Active",
               "description": "When you acquire this talent, your maximum and current health increase by 1 per level. This applies to all previous and future levels; for example, if you choose this talent at level 6, retroactively increase your health by 6.",
               "summary": "Gain +1 max health per level (including previous levels)."
+            },
+            {
+              "id": "sleuths_instincts",
+              "name": "Sleuth's Instincts",
+              "path": "agent",
+              "specialty": "investigator",
+              "prereq_stat": { "deduction": 3 },
+              "prereq_skill": "hardy",
+              "activation": "Always Active",
+              "description": "Gain an advantage on\ncognitive tests against\ncharacters whose motivation\nyou know. You know when\nthose characters lie to you.",
+              "summary": "You gain an advantage on cognitive tests against a\ncharacter whose motivation you know; you might learn\nthis motivation from the Get’ Em Talking talent, or\nfrom other activities such as researching them.\nAdditionally, after a character whose motivation you\nknow lies to you, you automatically know they’re being\ndeceitful (but not the nature of their lie)."
+            },
+            {
+              "id": "close_the_case",
+              "name": "Close the Case",
+              "path": "agent",
+              "specialty": "investigator",
+              "prereq_stat": { "deduction": 3 },
+              "prereq_skill": "hardy",
+              "activation": "3 Action Points",
+              "description": "Spend 3 focus to test Deduction vs. Cognitive,\ngaining an advantage if you know the target’s motivation.\nOn failure, the target gains an advantage against you.\nOn success, they back down.",
+              "summary": "Once per scene, spend 3 focus to make a Deduction\ntest against the Cognitive defense of a character you\ncan influence. You gain an advantage on this test if you\nknow the target’s current motivation, and a disadvantage\nif you don’t.\nOn a failure, the target gains an advantage on all tests\nagainst you until the end of their next turn.\nOn a success, you influence the target to back down.\nThey stop opposing your immediate aims in this scene\nand might even leave the scene. A target can resist this\ninfluence, but after they do, they gain a disadvantage\non all tests until the end of their next turn."
             }
           ]
         },
@@ -100,7 +122,7 @@
               "name": "Sure Outcome",
               "path": "agent",
               "specialty": "spy",
-              "prereq_stat": {"insight": 2},
+              "prereq_stat": { "insight": 2 },
               "prereq_skill": null,
               "activation": "Special Activation",
               "description": "When you use Opportunist, spend 2 focus to change an Opportunity to a Complication +4, or change any Complication to an Opportunity.",
@@ -122,18 +144,29 @@
               "name": "Subtle Takedown",
               "path": "agent",
               "specialty": "spy",
-              "prereq_stat": {"insight": 3},
+              "prereq_stat": { "insight": 3 },
               "prereq_skill": "cover_story",
               "activation": "2 Action Points",
               "description": "Make an unarmed attack with Insight vs. an unsuspecting target’s Cognitive, raising the stakes. On a hit, they can’t communicate.",
               "summary": "Make an unarmed attack using Insight against the Cognitive defense of a character who is Surprised, doesn’t sense you, or doesn’t view you as a threat (such as if you’re disguised). The target must be your size or smaller. Raise the stakes on this attack test. On a hit, the target also can’t communicate until the end of their next turn. Also on a hit, you can spend an Opportunity to Grapple them as a free action, automatically succeeding on your test; while Restrained by this grapple, they are also Prone."
             },
             {
+              "id": "mercurial_facade ",
+              "name": "Mercurial Facade",
+              "path": "agent",
+              "specialty": "spy",
+              "prereq_stat": { "deception": 3 },
+              "prereq_skill": "subtle_takedown",
+              "activation": "Special Activation",
+              "description": "Disguise yourself using Deception without needing physical supplies.\nThe first character to see through your disguise is Surprised.",
+              "summary": "When you attempt to disguise yourself, you can use\nDeception instead of Thievery. You can do this even\nif you don’t have supplies for a physical disguise.\nThe first character who sees through your disguise,\nor who you choose to surprise by revealing your identity,\nbecomes Surprised until the end of your next turn."
+            },
+            {
               "id": "plausible_excuse",
               "name": "Plausible Excuse",
               "path": "agent",
               "specialty": "spy",
-              "prereq_stat": {"deception": 1},
+              "prereq_stat": { "deception": 1 },
               "prereq_skill": null,
               "activation": "Reaction",
               "description": "Gain Sleight of Hand expertise. When discovered skulking, spend 2 focus to feign innocence.",
@@ -160,6 +193,17 @@
               "activation": "Always Active",
               "description": "When you hit with a weapon or unarmed attack, for each action point spent, deal extra damage equal to 1 + your tier.",
               "summary": "When you hit with a weapon or unarmed attack, for each action point you used on that attack’s action, increase the damage you deal by 1 + your tier. For example, if you’re level 6 and you make an attack that costs 2 action points, each action point deals an extra 1 + 2 damage, for a total of 6 damage"
+            },
+            {
+              "id": "high_society_contacts",
+              "name": "High Society Contacts",
+              "path": "agent",
+              "specialty": "spy",
+              "prereq_stat": { "patron": 1 },
+              "prereq_skill": "mighty",
+              "activation": "Special Activation",
+              "description": "Gain High Society expertise. Spend 2 focus to add to a Opportunity test to interact in high society.",
+              "summary": "When you make a test to interact socially in high society, you can spend 2 focus to add an Opportunity to the result. Additionally, when you acquire this talent, gain a cultural expertise in High Society."
             }
           ]
         },
@@ -173,7 +217,7 @@
               "name": "Risky Behavior",
               "path": "agent",
               "specialty": "thief",
-              "prereq_stat": {"insight": 2},
+              "prereq_stat": { "insight": 2 },
               "prereq_skill": null,
               "activation": "Special Activation",
               "description": "Spend 1 focus to raise the stakes on your test.",
@@ -195,11 +239,22 @@
               "name": "Underworld Contracts",
               "path": "agent",
               "specialty": "thief",
-              "prereq_stat": null,
+              "prereq_stat": { "patron": 1 },
               "prereq_skill": "double_down",
               "activation": "Special Activation",
               "description": "Gain Criminal Groups expertise. Spend 2 focus to add Opportunity to a social test against criminals.",
               "summary": "Before you make a test to interact socially with criminal individuals or groups, you can spend 2 focus to add an Opportunity to the result. Additionally, when you acquire this talent, gain a utility expertise in Criminal Groups. (Requires Patron or Follower in criminal underworld. Talk with GM)"
+            },
+            {
+              "id": "fast_talker",
+              "name": "Fast Talker",
+              "path": "agent",
+              "specialty": "thief",
+              "prereq_stat": { "insight": 3 },
+              "prereq_skill": "double_down",
+              "activation": "Free Action",
+              "description": "Spend 2 focus to gain 2 Action Points for spiritual tests with Use a Skill, Gain Advantage, or an Agent talent.",
+              "summary": "Spend 2 focus to gain 2 Action Points, which you can only use to\nmake spiritual skill tests via the following actions:\nUse a Skill, Gain Advantage, or an action from any\nAgent talent. During a conversation or endeavor, at the GM’s\ndiscretion, you can instead use both Action Points to make an additional contribution for the round."
             },
             {
               "id": "cheap_shot",
@@ -228,11 +283,22 @@
               "name": "Shadow Step",
               "path": "agent",
               "specialty": "thief",
-              "prereq_stat": {"thievery": 3},
+              "prereq_stat": { "thievery": 3 },
               "prereq_skill": "surefooted",
               "activation": "Free Action",
               "description": "After you Disengage, spend 2 focus to test Thievery vs. each enemy’s Cognitive to hide from them. You gain an advantage if in cover or obscured.",
               "summary": "After you Disengage, you can spend 2 focus to make a Thievery test and compare the result against the Cognitive defense of each enemy who can sense you. You gain an advantage on this test if you’re in cover or an area where your target’s primary sense is obscured (such as darkness). If you succeed against an enemy, you’re hidden as if you’d succeeded on a Stealth test to hide from them."
+            },
+            {
+              "id": "tricksters_hand",
+              "name": "Trickster's Hand",
+              "path": "agent",
+              "specialty": "theif",
+              "prereq_stat": { "thievery": 3 },
+              "prereq_skill": "surefooted",
+              "activation": "Free Action",
+              "description": "Spend 2 focus to gain 2 Action Points for\nphysical tests with Use a Skill,\nGain Advantage, or an Agent talent.",
+              "summary": "Spend 2 focus to gain 2 Action Points, which you can only use to\nmake physical skill tests via the following actions:\nUse a Skill, Gain Advantage, or an action from any\nAgent talent. During a conversation or endeavor, at the GM’s\ndiscretion, you can instead use both to make an\nadditional contribution for the round."
             }
           ]
         }
@@ -272,10 +338,87 @@
           "description": "Stationed abroad, Diplomats are adept at navigating court politics. They use what they learn about their host countries to seek more favorable treatment for their own.",
           "talents": [
             {
-              "id": "",
-              "name": "",
-              "path": "",
-              "specialty": "",
+              "id": "steadfast_challenge",
+              "name": "Steadfast Challenge",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "withering_retort",
+              "name": "Withering Retort",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "calm_appeal",
+              "name": "Calm Appeal",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "peaceful_solution",
+              "name": "Peaceful Solution",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "collected",
+              "name": "Collected",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "well_dressed",
+              "name": "Well Dressed",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "high_society_contacts",
+              "name": "High Society Contacts",
+              "path": "envoy",
+              "specialty": "diplomat",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "practiced_oratory",
+              "name": "Practiced Oratory",
+              "path": "envoy",
+              "specialty": "diplomat",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -290,10 +433,87 @@
           "description": "For Faithful, worship of the divine permeates their entire lives. They devote themselves to the traditions of their faith, demonstrating their convictions to others through word or deed.",
           "talents": [
             {
-              "id": "",
-              "name": "",
-              "path": "",
-              "specialty": "",
+              "id": "customary_garb",
+              "name": "Customary Garb",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "devoted_presence",
+              "name": "Devoted Presence",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "stalwart_presence",
+              "name": "Stalwart Presence",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "sage_counsel",
+              "name": "Sage Counsel",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "galvanize",
+              "name": "Galvanize",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "composed",
+              "name": "Composed",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "applied_motivation",
+              "name": "Applied Motivation",
+              "path": "envoy",
+              "specialty": "faithful",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "inspired_zeal",
+              "name": "Inspired Zeal",
+              "path": "envoy",
+              "specialty": "faithful",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -308,10 +528,87 @@
           "description": "More interested in the individual than the whole, Mentors devote themselves to their wards. They patiently nurture others toward greatness, seeing beyond doubts and deficits to stoke each person’s potential.",
           "talents": [
             {
-              "id": "",
-              "name": "",
-              "path": "",
-              "specialty": "",
+              "id": "sound_advice",
+              "name": "Sound Advice",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "lessons_in_patience",
+              "name": "Lessons in Patience",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "instill_confidence",
+              "name": "Instill Confidence",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "foresight",
+              "name": "Foresight",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "practical_demonstration",
+              "name": "Practical Demonstration",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "mighty",
+              "name": "Mighty",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "guiding_oration",
+              "name": "Guiding Oration",
+              "path": "envoy",
+              "specialty": "mentor",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "rallying_shout",
+              "name": "Rallying Shout",
+              "path": "envoy",
+              "specialty": "mentor",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -358,14 +655,73 @@
               "activation": "",
               "description": "",
               "summary": ""
-            }
-          ]
-        },
-        {
-          "id": "",
-          "name": "",
-          "description": "",
-          "talents": [
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -384,6 +740,178 @@
           "name": "",
           "description": "",
           "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -442,14 +970,73 @@
               "activation": "",
               "description": "",
               "summary": ""
-            }
-          ]
-        },
-        {
-          "id": "",
-          "name": "",
-          "description": "",
-          "talents": [
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -468,6 +1055,178 @@
           "name": "",
           "description": "",
           "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -526,14 +1285,73 @@
               "activation": "",
               "description": "",
               "summary": ""
-            }
-          ]
-        },
-        {
-          "id": "",
-          "name": "",
-          "description": "",
-          "talents": [
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -552,6 +1370,178 @@
           "name": "",
           "description": "",
           "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -603,14 +1593,73 @@
               "activation": "",
               "description": "",
               "summary": ""
-            }
-          ]
-        },
-        {
-          "id": "",
-          "name": "",
-          "description": "",
-          "talents": [
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -629,6 +1678,178 @@
           "name": "",
           "description": "",
           "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "",
+          "description": "",
+          "talents": [
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
+            {
+              "id": "",
+              "name": "",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": null,
+              "activation": "",
+              "description": "",
+              "summary": ""
+            },
             {
               "id": "",
               "name": "",
@@ -670,7 +1891,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "Gain Investiture score, Breathe Stormlight, Enhance, and Regenerate. When you complete the goal “Speak the First Ideal,” gain Abrasion and Division skills.",
@@ -729,7 +1950,14 @@
           ]
         }
       ],
-      "multipaths": ["Agent", "Investigator or Theif", "Hunter", "Archer, Assassin, or Tracker", "Scholar", "Artifabrian or Strategist"]
+      "multipaths": [
+        "Agent",
+        "Investigator or Theif",
+        "Hunter",
+        "Archer, Assassin, or Tracker",
+        "Scholar",
+        "Artifabrian or Strategist"
+      ]
     },
     {
       "id": "",
@@ -743,7 +1971,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -804,7 +2032,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -816,7 +2044,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -877,7 +2105,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -889,7 +2117,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -950,7 +2178,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -962,7 +2190,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -1023,7 +2251,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -1035,7 +2263,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -1096,7 +2324,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -1108,7 +2336,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -1169,7 +2397,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -1181,7 +2409,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
@@ -1242,7 +2470,7 @@
       ],
       "multipaths": [""]
     },
-        {
+    {
       "id": "",
       "name": "",
       "description": "",
@@ -1254,7 +2482,7 @@
         "name": "First Ideal",
         "path": "",
         "specialty": "",
-        "prereq_stat": {"level": 2},
+        "prereq_stat": { "level": 2 },
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "",
