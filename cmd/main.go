@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"log"
 
 	"github.com/tmkruger/sl_character_gen/internal/data"
 	"github.com/tmkruger/sl_character_gen/internal/functions"
@@ -51,8 +52,17 @@ func main() {
 		functions.GetSingerStatus(&c)
 		functions.GetSingerNationality(&c)
 	}
-	paths, _ := data.ReadPaths()
-
+	functions.GetLevel(&c)
+	paths, err := data.ReadPaths()
+	if err != nil {
+	    log.Fatalf("failed to read paths: %v", err)
+	}
+	if len(paths.Heroic) == 0 {
+	    log.Fatalf("no heroic paths loaded")
+	}
+	if len(paths.Radiant) == 0 {
+	    log.Fatalf("no radiant paths loaded")
+	}
 	functions.GetPaths(&c, paths)
 
 	//Print Char Details

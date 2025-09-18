@@ -7,6 +7,8 @@
       "keyTalent": {
         "id": "opportunist",
         "name": "Opportunist",
+        "path": "agent",
+        "specialty": null,
         "prereq_stat": null,
         "prereq_skill": null,
         "activation": "Special Activation",
@@ -23,7 +25,9 @@
             {
               "id": "watchful_eye",
               "name": "Watchful Eye",
-              "prereq_stat": ["deduction", 1],
+              "path": "agent",
+              "specialty": "investigator",
+              "prereq_stat": {"deduction": 1},
               "prereq_skill": null,
               "activation": "Reaction",
               "description": "When a willing ally you can influence within 20 feet of you rolls a plot die, you can use this reaction to use Opportunist on that plot die as if it were your own.",
@@ -32,6 +36,8 @@
             {
               "id": "quick_analysis",
               "name": "Quick Analysis",
+              "path": "agent",
+              "specialty": "investigator",
               "prereq_stat": null,
               "prereq_skill": "watchful_eye",
               "activation": "Free Action",
@@ -41,7 +47,9 @@
             {
               "id": "gather_evidence",
               "name": "Gather Evidence",
-              "prereq_stat": { "insight": 2 },
+              "path": "agent",
+              "specialty": "investigator",
+              "prereq_stat": {"insight": 2},
               "prereq_skill": "quick_analysis",
               "activation": "Always Active",
               "description": "After you succeed on a cognitive test against another character, you become Focused until the end of your next turn. Additionally, when you acquire this talent, gain a utility expertise in Legal Codes.",
@@ -50,7 +58,9 @@
             {
               "id": "get_em_talking",
               "name": "Get 'Em Talking",
-              "prereq_stat": { "insight": 2 },
+              "path": "agent",
+              "specialty": "investigator",
+              "prereq_stat": {"insight": 2},
               "prereq_skill": null,
               "activation": "2 Action Points",
               "description": "Spend 1 focus to make a Deduction test against the Spiritual defense of a character you can influence. On a success, you learn the target’s motivation for being in the scene. Until the end of the scene, when you make a test to leverage this motivation against the target, you can raise the stakes.",
@@ -59,6 +69,8 @@
             {
               "id": "baleful",
               "name": "Baleful",
+              "path": "agent",
+              "specialty": "investigator",
               "prereq_stat": null,
               "prereq_skill": "get_em_talking",
               "activation": "Always Active",
@@ -68,6 +80,8 @@
             {
               "id": "hardy",
               "name": "Hardy",
+              "path": "agent",
+              "specialty": "investigator",
               "prereq_stat": null,
               "prereq_skill": "baleful",
               "activation": "Always Active",
@@ -84,7 +98,9 @@
             {
               "id": "sure_outcome",
               "name": "Sure Outcome",
-              "prereq_stat": ["insight", 2],
+              "path": "agent",
+              "specialty": "spy",
+              "prereq_stat": {"insight": 2},
               "prereq_skill": null,
               "activation": "Special Activation",
               "description": "When you use Opportunist, spend 2 focus to change an Opportunity to a Complication +4, or change any Complication to an Opportunity.",
@@ -93,6 +109,8 @@
             {
               "id": "collected",
               "name": "Collected",
+              "path": "agent",
+              "specialty": "spy",
               "prereq_stat": null,
               "prereq_skill": "sure_outcome",
               "activation": "Always Active",
@@ -102,7 +120,9 @@
             {
               "id": "subtle_takedown",
               "name": "Subtle Takedown",
-              "prereq_stat": ["insight", 3],
+              "path": "agent",
+              "specialty": "spy",
+              "prereq_stat": {"insight": 3},
               "prereq_skill": "cover_story",
               "activation": "2 Action Points",
               "description": "Make an unarmed attack with Insight vs. an unsuspecting target’s Cognitive, raising the stakes. On a hit, they can’t communicate.",
@@ -111,7 +131,9 @@
             {
               "id": "plausible_excuse",
               "name": "Plausible Excuse",
-              "prereq_stat": ["deception", 1],
+              "path": "agent",
+              "specialty": "spy",
+              "prereq_stat": {"deception": 1},
               "prereq_skill": null,
               "activation": "Reaction",
               "description": "Gain Sleight of Hand expertise. When discovered skulking, spend 2 focus to feign innocence.",
@@ -120,6 +142,8 @@
             {
               "id": "cover_story",
               "name": "Cover Story",
+              "path": "agent",
+              "specialty": "spy",
               "prereq_stat": null,
               "prereq_skill": "plausible_excuse",
               "activation": "Always Active",
@@ -129,6 +153,8 @@
             {
               "id": "mighty",
               "name": "Mighty",
+              "path": "agent",
+              "specialty": "spy",
               "prereq_stat": null,
               "prereq_skill": "cover_story",
               "activation": "Always Active",
@@ -145,7 +171,9 @@
             {
               "id": "risky_behavior",
               "name": "Risky Behavior",
-              "prereq_stat": ["insight", 2],
+              "path": "agent",
+              "specialty": "thief",
+              "prereq_stat": {"insight": 2},
               "prereq_skill": null,
               "activation": "Special Activation",
               "description": "Spend 1 focus to raise the stakes on your test.",
@@ -154,6 +182,8 @@
             {
               "id": "double_down",
               "name": "Double Down",
+              "path": "agent",
+              "specialty": "thief",
               "prereq_stat": null,
               "prereq_skill": "risky_behavior",
               "activation": "Special Activation",
@@ -163,6 +193,8 @@
             {
               "id": "underworld_contracts",
               "name": "Underworld Contracts",
+              "path": "agent",
+              "specialty": "thief",
               "prereq_stat": null,
               "prereq_skill": "double_down",
               "activation": "Special Activation",
@@ -172,6 +204,8 @@
             {
               "id": "cheap_shot",
               "name": "Cheap Shot",
+              "path": "agent",
+              "specialty": "thief",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "1 Action Point",
@@ -181,6 +215,8 @@
             {
               "id": "surefooted",
               "name": "Surefooted",
+              "path": "agent",
+              "specialty": "thief",
               "prereq_stat": null,
               "prereq_skill": "cheap_shot",
               "activation": "Always Active",
@@ -190,7 +226,9 @@
             {
               "id": "shadow_step",
               "name": "Shadow Step",
-              "prereq_stat": ["thievery", 3],
+              "path": "agent",
+              "specialty": "thief",
+              "prereq_stat": {"thievery": 3},
               "prereq_skill": "surefooted",
               "activation": "Free Action",
               "description": "After you Disengage, spend 2 focus to test Thievery vs. each enemy’s Cognitive to hide from them. You gain an advantage if in cover or obscured.",
@@ -218,6 +256,8 @@
       "keyTalent": {
         "id": "rousing_presence",
         "name": "Rousing Presence",
+        "path": "envoy",
+        "specialty": null,
         "prereq_stat": null,
         "prereq_skill": null,
         "activation": "Special Activation",
@@ -234,6 +274,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -250,6 +292,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -266,6 +310,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -287,6 +333,8 @@
       "keyTalent": {
         "id": "",
         "name": "",
+        "path": "",
+        "specialty": "",
         "prereq_stat": null,
         "prereq_skill": null,
         "activation": "",
@@ -303,6 +351,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -319,6 +369,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -335,6 +387,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -363,6 +417,8 @@
       "keyTalent": {
         "id": "",
         "name": "",
+        "path": "",
+        "specialty": "",
         "prereq_stat": null,
         "prereq_skill": null,
         "activation": "",
@@ -379,6 +435,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -395,6 +453,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -411,6 +471,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -439,6 +501,8 @@
       "keyTalent": {
         "id": "",
         "name": "",
+        "path": "",
+        "specialty": "",
         "prereq_stat": null,
         "prereq_skill": null,
         "activation": "",
@@ -455,6 +519,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -471,6 +537,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -487,6 +555,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -508,6 +578,8 @@
       "keyTalent": {
         "id": "",
         "name": "",
+        "path": "",
+        "specialty": "",
         "prereq_stat": null,
         "prereq_skill": null,
         "activation": "",
@@ -524,6 +596,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -540,6 +614,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -556,6 +632,8 @@
             {
               "id": "",
               "name": "",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": null,
               "activation": "",
@@ -590,7 +668,9 @@
       "keyTalent": {
         "id": "dustbringer_key",
         "name": "First Ideal",
-        "prereq_stat": ["level", 2],
+        "path": "",
+        "specialty": "",
+        "prereq_stat": {"level": 2},
         "prereq_skill": "spren",
         "activation": "Special Activation",
         "description": "Gain Investiture score, Breathe Stormlight, Enhance, and Regenerate. When you complete the goal “Speak the First Ideal,” gain Abrasion and Division skills.",
@@ -604,6 +684,8 @@
             {
               "id": "searing_dust_storm",
               "name": "Searing Dust Storm",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": "dustbringer_key",
               "activation": "Special Activation",
@@ -619,6 +701,8 @@
             {
               "id": "frictionless_motion",
               "name": "Frictionless Motion",
+              "path": "",
+              "specialty": "",
               "prereq_stat": null,
               "prereq_skill": "dustbringer_key",
               "activation": "Always Active",
@@ -634,7 +718,10 @@
             {
               "id": "eroding_escape",
               "name": "Eroding Escape",
-              "prereq_stat": "dustbringer_key",
+              "path": "",
+              "specialty": "",
+              "prereq_stat": null,
+              "prereq_skill": "dustbringer_key",
               "activation": "1 Action Point",
               "description": "Spend 1 or more Investiture\nto end that many effects\ninflicting the Restrained or\nImmobilzed condition.",
               "summary": "Spend 1 Investiture or more to end that many effects on\nyourself or an ally within your reach. The chosen effects\nmust either be applying the Immobilized or Restrained\ncondition, or be adding a disadvantage to one or more\nphysical tests.\nDepending on the effect’s source, this talent might\nnot fully destroy the source at the GM’s discretion,\nbut it creates space or opportunity for your target to\nmove around it or free themselves from its constraint.\nIf the effect’s source remains at the end of the target’s\nnext turn (such as when swimming or when wearing\narmor with the Cumbersome trait), the effect then\nreasserts itself."
@@ -642,11 +729,7 @@
           ]
         }
       ],
-      "multipaths": [
-        ["Agent", "Investigator or Theif"],
-        ["Hunter", "Archer, Assassin, or Tracker"],
-        ["Scholar", "Artifabrian or Strategist"]
-      ]
+      "multipaths": ["Agent", "Investigator or Theif", "Hunter", "Archer, Assassin, or Tracker", "Scholar", "Artifabrian or Strategist"]
     }
   ]
 }

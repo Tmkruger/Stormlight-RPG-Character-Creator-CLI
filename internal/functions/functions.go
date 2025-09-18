@@ -29,8 +29,10 @@ func CustomIntro(c *data.Character, mainMenu *bool) {
 			RmLineAbove(3)
 			fmt.Println("\n”Every good story needs a name for its hero. Or villain. Or tragic fool, depending on how things go.\nWhat shall I call you when I whisper your deeds to the winds?” (Character Name)\n")
 			for {
-				name := GetUserInput("Enter your character name: ")
-				RmLineAbove(1)
+				fmt.Print("Enter your name: ")
+				var name string
+				fmt.Scanln(&name)
+				RmLineAbove(1)	
 				fmt.Printf("\nAre you certain %v is your name? (y/n)\n", name)
 				for {
 					answer = GetUserInput("\nEnter your choice: ")
@@ -253,24 +255,13 @@ func GetLevel(c *data.Character) {
 
 func GetPaths(c *data.Character, paths data.Paths) {
 	println("“The world offers many roads, and few of them are straight. Which path started your tale?\nDo you follow the ideals of Radiance? Tread the blood soaked road of Odium’s servants?\nOr perhaps you wander, untethered, carving your own crooked trail.\nWhich path will you stumble down, oh eager traveler?“ (Starting Path)")
-	println(len(paths.Heroic))
+	if len(paths.Heroic) == 0 {
+		fmt.Println("No Heroic Paths Loaded")
+		return
+	}
+	fmt.Printf("First path: %s\n", paths.Heroic[0].Name)
 }
 
-func GetAttributes(c *data.Character) {
-	println("“Ah, the bones of your tale—strength, wit, charm, and all the little numbers that will later decide whether you climb triumphantly or plummet hilariously. Tell me, in what qualities do you shine, and in which do you stumble like a drunk chull?“")
-}
-
-func GetTalents(c *data.Character) {
-	println("“Every protagonist needs a trick. Shall we say you’re handy with a blade? Or perhaps your tongue spins lies smoother than satin? Maybe you juggle knives while reciting dirty limericks—that would be memorable. What talents do you bring to the tale?“")
-}
-
-func GetEquipment(c *data.Character) {
-	println("“Heroes and fools alike are only as good as the tools they carry. Sword, spear, boots without holes, or a lucky rock named Kevin—what shall I place in your hands as you stride into destiny?“")
-}
-
-func GetBackstory(c *data.Character) {
-	println("“At last, we come to the marrow of the matter: your past. Every soul drags behind them a cart of stories, some glorious, some… less so. What tales haunt you, drive you, or whisper in your ear as you walk into tomorrow?“")
-}
 
 // Helper Functions
 func RmLineAbove(num int) {
